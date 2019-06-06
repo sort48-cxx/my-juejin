@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*首页*/
+.index-b .van-field__control{
+	color:#fff!important;
+}
+
+.index-b .van-icon{
+	font-size:1.2rem;
+	vertical-align:middle;
+}
+.index-b .van-hairline--top-bottom::after{
+	border-width:0 0;
+}
+.index-b .van-tab{
+	color:#ffff
+}
