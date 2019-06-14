@@ -1,11 +1,11 @@
 <template>
   <div>
     <van-tabbar route fixed>
-      <van-tabbar-item icon="home-o" to="/home"></van-tabbar-item>
-      <van-tabbar-item icon="fire-o"></van-tabbar-item>
-      <van-tabbar-item icon="search"></van-tabbar-item>
-      <van-tabbar-item icon="records"></van-tabbar-item>
-      <van-tabbar-item icon="manager"></van-tabbar-item>
+      <van-tabbar-item replace icon="home-o" to="/index"></van-tabbar-item>
+      <van-tabbar-item replace icon="fire-o" to="/boil"></van-tabbar-item>
+      <van-tabbar-item replace icon="search" to="/search"></van-tabbar-item>
+      <van-tabbar-item replace icon="records" to="/book"></van-tabbar-item>
+      <van-tabbar-item replace icon="manager" to="/me"></van-tabbar-item>
     </van-tabbar>
   </div>
 </template>
