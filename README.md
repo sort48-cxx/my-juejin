@@ -1,5 +1,9 @@
 # my-juejin
 
+## 简介
+```
+  本项目是仿掘金APP的vue项目，该项目采用了Vue-cli3.0+Vant+Vue-router+axios+Vuex.
+```
 ## Project setup
 ```
 npm install
