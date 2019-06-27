@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-f4">
-    <HeadSearch></HeadSearch>
+  <div class="bg-f4 children-b">
+    <HeadSearch type="2" title="话题广场"></HeadSearch>
     <div class="pl-1 bg-fff mb-1 pb-1">
       <van-row type="flex" align="center">
         <van-col span="5">

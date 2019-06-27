@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="children-b bg-fff">
     <HeadSearch></HeadSearch>
     
     <div>活动详情</div>

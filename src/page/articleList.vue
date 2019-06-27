@@ -24,39 +24,41 @@
     <!-- 标签 E-->
     <!-- 推荐 S-->
     <div class="layout bg-f4">
-      <van-panel class="mb-1">
-        <div class="p-lr-15">
-          <div>
-            <p class="font-10 c-333 mb-05">深度解读Helm3:</p>
-            <p
-              class="font-6 c-666"
-            >阿里云数据可视化应用工具DataV正式推出专业版，该版本为可视化领域专业团队和从业者量身打造，定位数据可视分析大屏搭建场景，让使用者可以轻松hold住复杂交互设计和实时数据.</p>
+      <router-link :to="{name:'Article',params:{id:'2222'}}">
+        <van-panel class="mb-1">
+          <div class="p-lr-15">
+            <div>
+              <p class="font-10 c-333 mb-05">深度解读Helm3:</p>
+              <p
+                class="font-6 c-666"
+              >阿里云数据可视化应用工具DataV正式推出专业版，该版本为可视化领域专业团队和从业者量身打造，定位数据可视分析大屏搭建场景，让使用者可以轻松hold住复杂交互设计和实时数据.</p>
+            </div>
+            <div>
+              <van-row type="flex" align="center" class="p-tb-05">
+                <van-col span="6">
+                  <van-icon name="flower-o" size="1.2rem" color="#ccc"/>
+                  <span class="font-8 c-ccc ml-02">22</span>
+                </van-col>
+                <van-col span="6">
+                  <van-icon name="chat-o" size="1.2rem" color="#ccc"/>
+                  <span class="font-8 c-ccc ml-02">评论</span>
+                </van-col>
+              </van-row>
+            </div>
           </div>
-          <div>
-            <van-row type="flex" align="center" class="p-tb-05">
-              <van-col span="6">
-                <van-icon name="flower-o" size="1.2rem" color="#ccc"/>
-                <span class="font-8 c-ccc ml-02">22</span>
+          <div slot="header" class="p-lr-15 pt-1 mb-05">
+            <van-row type="flex" justify="space-between" align="center">
+              <van-col span="15">
+                <img class="art-logo-2 v-m">
+                <span class="font-6 c-666 v-m ml-02">阿里云云栖社区</span>
               </van-col>
-              <van-col span="6">
-                <van-icon name="chat-o" size="1.2rem" color="#ccc"/>
-                <span class="font-8 c-ccc ml-02">评论</span>
+              <van-col span="9" class="t-r">
+                <span class="font-6 c-999 v-m">javascript/前端</span>
               </van-col>
             </van-row>
           </div>
-        </div>
-        <div slot="header" class="p-lr-15 pt-1 mb-05">
-          <van-row type="flex" justify="space-between" align="center">
-            <van-col span="15">
-              <img class="art-logo-2 v-m">
-              <span class="font-6 c-666 v-m ml-02">阿里云云栖社区</span>
-            </van-col>
-            <van-col span="9" class="t-r">
-              <span class="font-6 c-999 v-m">javascript/前端</span>
-            </van-col>
-          </van-row>
-        </div>
-      </van-panel>
+        </van-panel>
+      </router-link>
     </div>
     <!-- 推荐 E-->
   </div>
@@ -83,8 +85,8 @@ export default {
     [Tab.name]: Tab,
     [Tabs.name]: Tabs,
     [Button.name]: Button,
-	[Tag.name]: Tag,
-	[Panel.name]: Panel,
+    [Tag.name]: Tag,
+    [Panel.name]: Panel
   }
 };
 </script>
@@ -120,7 +122,7 @@ export default {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.bb{
-	border-bottom:1px solid #f4f4f4;
+.bb {
+  border-bottom: 1px solid #f4f4f4;
 }
 </style>

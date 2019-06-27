@@ -1,6 +1,6 @@
 <template>
-  <div class="index-b">
-    <HeadSearch></HeadSearch>
+  <div class="index-b children-b">
+    <HeadSearch type="2" title="收藏集" isSearch="2"></HeadSearch>
     <van-tabs background="#027fff" color="#fff">
       <van-tab title="创建的"></van-tab>
       <van-tab title="关注的"></van-tab>

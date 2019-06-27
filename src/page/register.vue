@@ -1,6 +1,6 @@
 <template>
   <div class="bg-027fff h-100">
-    <HeadSearch></HeadSearch>
+    <HeadSearch type="2" title="注册"></HeadSearch>
     <div class="mt-1">
       <div class="ml-1 mr-1">
         <van-cell-group class="mb-1">

@@ -1,6 +1,6 @@
 <template>
-  <div class="index-b">
-    <HeadSearch></HeadSearch>
+  <div class="children-b index-b">
+    <HeadSearch type="2" title="我赞过的"></HeadSearch>
     <div>
       <van-tabs background="#027fff" color="#fff">
         <van-tab title="文章"></van-tab>

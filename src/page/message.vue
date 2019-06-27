@@ -1,5 +1,5 @@
 <template>
-  <div class="tag-b">
+  <div class="tag-b children-b">
     <HeadSearch></HeadSearch>
     <div>
       <van-tabs background="#027fff" color="#fff">

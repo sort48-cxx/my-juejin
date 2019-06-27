@@ -1,6 +1,6 @@
 <template>
-  <div class="tag-b bg-f4">
-    <HeadSearch></HeadSearch>
+  <div class="tag-b bg-f4 children-b">
+    <HeadSearch type="2" title="线下活动"></HeadSearch>
     <div>
       <van-tabs background="#027fff" color="#fff">
         <van-tab title="全部"></van-tab>
@@ -12,7 +12,7 @@
       <!-- 标签 S-->
       <div>
         <ul>
-          <li>
+          <router-link :to="{name:'ActivityInfo'}" tag="li">
             <div>
               <img
                 src="https://user-gold-cdn.xitu.io/1560135413951bd905f5a9872e4112ea3044148252ef1.jpg?imageView2/1/w/940/h/560/q/85/format/webp/interlace/1"
@@ -36,7 +36,7 @@
                 <van-button icon="star-o" round type="info" size="small" class="w-full">报名参加</van-button>
               </van-col>
             </van-row>
-          </li>
+          </router-link>
           <li>
             <div>
               <img

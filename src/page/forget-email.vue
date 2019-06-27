@@ -1,6 +1,6 @@
 <template>
   <div class="bg-027fff h-100">
-    <HeadSearch></HeadSearch>
+    <HeadSearch type="2" title="忘记密码"></HeadSearch>
     <div class="mt-1">
       <div class="ml-1 mr-1">
         <p class="mb-05 c-fff font-6">请输入邮箱</p>

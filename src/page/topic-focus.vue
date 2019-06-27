@@ -1,10 +1,10 @@
 <template>
-  <div class="tag-b bg-f4">
+  <div class="tag-b bg-f4 children-b">
     <HeadSearch></HeadSearch>
     <!-- 标签 S-->
     <div class="bg-fff mb-05">
       <ul class="ul-2">
-        <li>
+        <router-link :to="{name:'TopicIndex'}" tag="li">
           <van-row type="flex" justify="space-between" align="center">
             <van-col span="24">
               <van-row type="flex" align="center">
@@ -21,7 +21,7 @@
               </van-row>
             </van-col>
           </van-row>
-        </li>
+        </router-link>
       </ul>
     </div>
     <!-- 标签 E-->

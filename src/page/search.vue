@@ -1,6 +1,5 @@
 <template>
   <div class="s-b">
-    <Tabbar1></Tabbar1>
     <div class="bg-027fff">
       <van-search placeholder="搜索文章、用户、标签" background="#027fff"/>
     </div>
@@ -12,11 +11,11 @@
     <div class="bg-f4 mb-05 pb-h">
       <div class="row-2 mt-h bg-fff pb-h">
         <van-tabbar :fixed="false">
-          <van-tabbar-item icon="column">文章榜</van-tabbar-item>
-          <van-tabbar-item icon="award">作者榜</van-tabbar-item>
-          <van-tabbar-item icon="browsing-history">看一看</van-tabbar-item>
-          <van-tabbar-item icon="chat">话题广场</van-tabbar-item>
-          <van-tabbar-item icon="hot">活动</van-tabbar-item>
+          <van-tabbar-item icon="column" @click="goURL('/articleList')">文章榜</van-tabbar-item>
+          <van-tabbar-item icon="award" @click="goURL('/author')">作者榜</van-tabbar-item>
+          <van-tabbar-item icon="browsing-history" @click="goURL('/look')">看一看</van-tabbar-item>
+          <van-tabbar-item icon="chat" @click="goURL('/topicList')">话题广场</van-tabbar-item>
+          <van-tabbar-item icon="hot" @click="goURL('/activity')">活动</van-tabbar-item>
         </van-tabbar>
       </div>
     </div>
@@ -34,26 +33,27 @@
         </van-row>
       </div>
       <div class="bb pb-1">
-        <van-row class="ml-1 mr-1">
-          <van-col span="19">
-            <p class="font-8 c-333 mb-02">我的奇葩面试经历分享：喊价25k，HR却给了30K。。。</p>
-            <p class="font-6 c-999">
-              64人赞
-              <span class="m-lr-03">·</span>作者1
-              <span class="m-lr-03">·</span>5小时前
-            </p>
-          </van-col>
-          <van-col span="5">
-            <div class="img"></div>
-          </van-col>
-        </van-row>
+        <router-link :to="{name:'Article',params:{id:'2222'}}">
+          <van-row class="ml-1 mr-1">
+            <van-col span="19">
+              <p class="font-8 c-333 mb-02">我的奇葩面试经历分享：喊价25k，HR却给了30K。。。</p>
+              <p class="font-6 c-999">
+                64人赞
+                <span class="m-lr-03">·</span>作者1
+                <span class="m-lr-03">·</span>5小时前
+              </p>
+            </van-col>
+            <van-col span="5">
+              <div class="img"></div>
+            </van-col>
+          </van-row>
+        </router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Tabbar1 from "../components/tabbar.vue";
 import { Search } from "vant";
 import { Swipe, SwipeItem } from "vant";
 import { Tabbar, TabbarItem } from "vant";
@@ -64,7 +64,6 @@ export default {
     return {};
   },
   components: {
-    Tabbar1,
     [Search.name]: Search,
     [Swipe.name]: Swipe,
     [SwipeItem.name]: SwipeItem,
@@ -73,6 +72,11 @@ export default {
     [Icon.name]: Icon,
     [Row.name]: Row,
     [Col.name]: Col
+  },
+  methods: {
+    goURL(url) {
+      this.$router.push(url);
+    }
   }
 };
 </script>

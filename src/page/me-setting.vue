@@ -1,6 +1,6 @@
-<template>
-  <div class="bg-f4">
-    <HeadSearch></HeadSearch>
+<template> 
+  <div class="bg-f4 children-b">
+    <HeadSearch type="2" title="设置"></HeadSearch>
     <div>
       <van-cell title="邮箱" icon="location-o" value="123456789@qq.com"/>
       <van-cell title="手机号" icon="location-o" value="13545645678"/>

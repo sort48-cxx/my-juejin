@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <HeadSearch></HeadSearch>
+  <div class="children-b">
+    <HeadSearch type="1" title="设置密码"></HeadSearch>
     <div class="ml-1 mr-1">
       <van-cell-group class="mb-1">
         <van-field v-model="value" placeholder="原密码" class="b-b"/>

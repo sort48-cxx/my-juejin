@@ -1,6 +1,6 @@
 <template>
-  <div class="a-b">
-    <HeadSearch></HeadSearch>
+  <div class="a-b children-b bg-fff">
+    <HeadSearch type="2" title="作者榜"></HeadSearch>
     <van-tabs background="#027fff" color="#fff">
       <van-tab title="推荐"></van-tab>
       <van-tab title="前端"></van-tab>
@@ -13,7 +13,7 @@
     <!-- 标签 S-->
     <div>
       <ul class="ul-2">
-        <li>
+        <router-link :to="{name:'MeIndex'}" tag="li">
           <van-row type="flex" justify="space-between" align="center">
             <van-col span="19">
               <van-row type="flex" align="center">
@@ -37,7 +37,7 @@
               </van-button>
             </van-col>
           </van-row>
-        </li>
+        </router-link>
         <li>
           <van-row type="flex" justify="space-between" align="center">
             <van-col span="19">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeadSearch></HeadSearch>
+    <HeadSearch type="2" title="关注的人在看"></HeadSearch>
 
     <!-- 关注 S-->
     <div class="layout bg-f4">
@@ -30,7 +30,10 @@
           </div>
         </div>
         <div slot="header" class="pt-1 mb-05">
-          <div class="b-b font-6 c-999 mb-1 pl-1 pb-h">你关注的<span class="c-333 m-lr-03">作者1</span>赞了这篇文章</div>
+          <div class="b-b font-6 c-999 mb-1 pl-1 pb-h">
+            你关注的
+            <span class="c-333 m-lr-03">作者1</span>赞了这篇文章
+          </div>
           <div class="p-lr-15">
             <van-row type="flex" justify="space-between" align="center">
               <van-col span="16">
@@ -83,6 +86,11 @@ export default {
     [Icon.name]: Icon,
     [Panel.name]: Panel,
     [Button.name]: Button
+  },
+  methods: {
+    goURL(url) {
+      this.$router.push(url);
+    }
   }
 };
 </script>
@@ -111,11 +119,11 @@ export default {
 .btn {
   width: 70px;
 }
-.b-b{
-border-bottom:1px solid #f4f4f4;
+.b-b {
+  border-bottom: 1px solid #f4f4f4;
 }
-.m-lr-03{
-margin-left:.3rem;
-margin-right:.3rem
+.m-lr-03 {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 </style>

@@ -89,3 +89,6 @@ input::placeholder {
 	font-size: 1rem;
 	vertical-align: middle;
 }
+.type3 ::placeholder{
+	color:#fff!important;
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="tag-b">
-    <HeadSearch></HeadSearch>
+    <HeadSearch type="2" title="标签管理" isSearch="1"></HeadSearch>
     <div>
       <van-tabs background="#027fff" color="#fff">
         <van-tab title="已关注标签"></van-tab>

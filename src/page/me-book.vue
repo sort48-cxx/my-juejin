@@ -1,6 +1,6 @@
 <template>
-  <div class="index-b">
-    <HeadSearch></HeadSearch>
+  <div class="index-b children-b">
+    <HeadSearch  type="2" title="已购小册"></HeadSearch>
 	
 
 	<!--无数据 S-->

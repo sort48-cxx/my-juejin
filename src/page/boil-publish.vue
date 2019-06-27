@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-fff children-b">
     <HeadSearch></HeadSearch>
     <van-cell-group class="mb-1">
       <van-field placeholder="发布沸点时选择话题会有更多曝光哦~" class="h"/>

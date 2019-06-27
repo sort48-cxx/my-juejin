@@ -14,11 +14,14 @@
 import { Tabbar, TabbarItem } from "vant";
 export default {
   data() {
-    return {};
+    return {
+	};
   },
   components: {
     [Tabbar.name]: Tabbar,
     [TabbarItem.name]: TabbarItem
+  },
+  methods: {
   }
 };
 </script>

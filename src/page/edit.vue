@@ -1,6 +1,6 @@
 <template>
   <div class="bg-f4">
-    <HeadSearch></HeadSearch>
+    <HeadSearch type="2" title="修改"></HeadSearch>
     <van-cell-group>
       <van-cell title="头像" class="flex-align-center">
         <div slot="default">

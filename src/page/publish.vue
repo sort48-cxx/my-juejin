@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeadSearch></HeadSearch>
+    <HeadSearch type="2" title="发布"></HeadSearch>
     <div class="layout">
       <van-row type="flex" align="center" class="bb">
         <van-col span="3">

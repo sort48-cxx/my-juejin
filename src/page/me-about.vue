@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeadSearch></HeadSearch>
+    <HeadSearch type="1" title="关于"></HeadSearch>
     <van-cell title="检查更新"/>
     <van-cell title="关于掘金"/>
     <van-cell title="去应用市场为我们评分"/>

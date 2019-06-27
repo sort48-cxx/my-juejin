@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeadSearch></HeadSearch>
+    <HeadSearch type="2" title="话题特别展示"></HeadSearch>
     <div>
       <van-cell-group>
         <van-switch-cell v-model="checked" title="开源推荐" size="1.2rem"/>

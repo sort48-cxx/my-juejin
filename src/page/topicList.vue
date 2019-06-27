@@ -1,6 +1,6 @@
 <template>
-  <div class="tag-b bg-f4">
-    <HeadSearch></HeadSearch>
+  <div class="tag-b bg-f4 children-b">
+    <HeadSearch type="2" title="话题广场"></HeadSearch>
     <!-- 标签 S-->
     <div class="bg-fff mb-05">
       <div class="head-title">
@@ -9,12 +9,14 @@
             <span class="c-666 font-8">关注话题</span>
           </van-col>
           <van-col span="6">
-            <span class="c-999 font-6">查看全部</span>
+            <router-link :to="{name:'TopicFocus'}">
+              <span class="c-999 font-6">查看全部</span>
+            </router-link>
           </van-col>
         </van-row>
       </div>
       <ul class="ul-2">
-        <li>
+        <router-link :to="{name:'TopicIndex'}" tag="li">
           <van-row type="flex" justify="space-between" align="center">
             <van-col span="20">
               <van-row type="flex" align="center">
@@ -34,7 +36,7 @@
               <van-tag round class="w-36" color="#EFEFEF" text-color="#42A6E4">3</van-tag>
             </van-col>
           </van-row>
-        </li>
+        </router-link>
         <li>
           <van-row type="flex" justify="space-between" align="center">
             <van-col span="20">

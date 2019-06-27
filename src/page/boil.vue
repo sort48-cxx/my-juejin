@@ -76,13 +76,10 @@
       </van-panel>
     </div>
     <!-- 关注 E-->
-
-    <Tabbar></Tabbar>
   </div>
 </template>
 
 <script>
-import Tabbar from "../components/tabbar.vue";
 import { Row, Col } from "vant";
 import { Tab, Tabs } from "vant";
 import { Icon } from "vant";
@@ -93,7 +90,6 @@ export default {
     return {};
   },
   components: {
-    Tabbar,
     [Row.name]: Row,
     [Col.name]: Col,
     [Tab.name]: Tab,

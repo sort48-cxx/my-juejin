@@ -1,6 +1,5 @@
 <template>
   <div class="hs-b">
-    <Tabbar></Tabbar>
     <van-tabs background="#027fff" color="#fff">
       <van-tab title="全部"></van-tab>
       <van-tab title="已购"></van-tab>
@@ -53,7 +52,6 @@
 </template>
 
 <script>
-import Tabbar from "../components/tabbar.vue";
 import { Tab, Tabs, Row, Col } from "vant";
 import { Tag, Icon } from "vant";
 export default {
@@ -61,7 +59,6 @@ export default {
     return {};
   },
   components: {
-    Tabbar,
     [Tab.name]: Tab,
     [Tabs.name]: Tabs,
     [Row.name]: Row,

@@ -1,6 +1,6 @@
 <template>
-  <div class="hs-b">
-    <HeadSearch></HeadSearch>
+  <div class="hs-b children-b bg-fff">
+    <HeadSearch type="3"></HeadSearch>
     <div>
       <van-tabs background="#027fff" color="#fff">
         <van-tab title="综合"></van-tab>

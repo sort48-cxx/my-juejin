@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-f4">
-    <HeadSearch></HeadSearch>
+  <div class="bg-f4 children-b">
+    <HeadSearch type="1" title="推送消息设置"></HeadSearch>
     <div>
       <van-cell title="编辑推荐" icon="location-o">
         <div slot="default">

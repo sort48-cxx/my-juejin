@@ -1,5 +1,5 @@
 <template>
-  <div class="index-b">
+  <div class="children-b index-b">
     <HeadSearch></HeadSearch>
 
     <div class="b-b pb-1 pt-1">
